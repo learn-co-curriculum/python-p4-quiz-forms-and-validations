@@ -4,7 +4,7 @@
     "title": "Validations Quiz",
     "html_url": "https://learning.flatironschool.com/courses/7560/quizzes/53510",
     "mobile_url": "https://learning.flatironschool.com/courses/7560/quizzes/53510?force_user=1&persist_headless=1",
-    "description": "<div id=\"git-data-element\" data-org=\"learn-co-curriculum\" data-repo=\"python-p4-quiz-forms-and-validations\"></div>\n<header class=\"fis-header\"><a class=\"fis-git-link\" href=\"https://github.com/learn-co-curriculum/python-p4-quiz-forms-and-validations/issues/new\" target=\"_blank\"><img id=\"issue-img\" title=\"Create New Issue\" alt=\"Create New Issue\"></a></header>\n<p>It's time to check your knowledge! Use this quiz to create a custom study guide. Note any answers that were marked incorrect, so you can study the relevant material and try this quiz again.</p>\n<p>If you don't know the answer to a question, please do not guess. Instead, select \"I don't know\". It's OK not to know everything and to admit when we're unsure.</p>",
+    "description": "<div id=\"git-data-element\" data-org=\"learn-co-curriculum\" data-repo=\"python-p4-quiz-forms-and-validations\"></div>\n<header class=\"fis-header\">\n  <a class=\"fis-git-link\" href=\"https://github.com/learn-co-curriculum/python-p4-quiz-forms-and-validations/issues/new\" target=\"_blank\"><img id=\"issue-img\" title=\"Create New Issue\" alt=\"Create New Issue\"></a>\n</header>\n\n<p>It's time to check your knowledge! Use this quiz to create a custom study guide.\nNote any answers that were marked incorrect, so you can study the relevant\nmaterial and try this quiz again.</p>\n\n<p>If you don't know the answer to a question, please do not guess. Instead, select\n\"I don't know\". It's OK not to know everything and to admit when we're unsure.</p>",
     "quiz_type": "assignment",
     "time_limit": null,
     "timer_autosubmit_disabled": false,
@@ -71,7 +71,7 @@
     "only_visible_to_overrides": false,
     "assignment_group_id": 25107,
     "show_correct_answers_last_attempt": true,
-    "version_number": 4,
+    "version_number": 5,
     "has_access_code": false,
     "post_to_sis": false,
     "migration_id": "g0083b13ba5ac9c7e604e490f100921c1",
@@ -89,7 +89,7 @@
       "position": null,
       "question_name": "Validations",
       "question_type": "multiple_answers_question",
-      "question_text": "<p>Which SQLAlchemy constraint enforces that two rows cannot have the same value\nfor a specific column?&nbsp;</p>",
+      "question_text": "<p>Which SQLAlchemy constraint enforces that two rows cannot have the same value\nfor a specific column?</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
@@ -99,23 +99,23 @@
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7560/pages/sqlalchemy-constraints?module_item_id=629412\">SQLAlchemy Constraints</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 6015,
+          "id": "6015",
           "text": "",
           "comments": "",
-          "comments_html": "<p>Right! We can pass in the unique constraint using the&nbsp;<code>unique=True&nbsp;</code>into\nthe model column definition.&nbsp;</p>",
+          "comments_html": "<p>Right! We can pass in the unique constraint by using <code>unique=True</code> in\nthe model column definition.</p>",
           "weight": 100.0,
           "html": "<p><code>unique</code></p>"
         },
         {
-          "id": 3273,
+          "id": "3273",
           "text": "",
           "comments": "",
-          "comments_html": "<p>The nullable constraint only enforces that the value cannot be Null.&nbsp;</p>",
+          "comments_html": "<p>The nullable constraint only enforces that the value cannot be Null.</p>",
           "weight": 0.0,
           "html": "<p><code>nullable</code></p>"
         },
         {
-          "id": 1426,
+          "id": "1426",
           "text": "",
           "comments": "",
           "comments_html": "",
@@ -138,7 +138,7 @@
       "position": null,
       "question_name": "Validations",
       "question_type": "multiple_choice_question",
-      "question_text": "<p>How do we add constraints for multiple columns at a database level?&nbsp;</p>",
+      "question_text": "<p>How do we add constraints for multiple columns at a database level?</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
@@ -148,19 +148,19 @@
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7560/pages/flask-sqlalchemy-validations\">SQLAlchemy Validations</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 6499,
+          "id": 2580,
           "text": "",
-          "html": "<p>We can use CheckConstraints outside of the column definitions under\n<code>__table_args__</code> .</p>",
+          "html": "<p>We can use CheckConstraints outside of the column definitions\nunder<code>__table_args__</code> .</p>",
           "comments": "",
           "comments_html": "<p>Right!</p>",
           "weight": 100.0
         },
         {
-          "id": 2591,
+          "id": 1954,
           "text": "",
-          "html": "<p>We can use the validates function from the&nbsp;<code>sqlalchemy.orm</code>.</p>",
+          "html": "<p>We can use the validates function from the <code>sqlalchemy.orm</code>.</p>",
           "comments": "",
-          "comments_html": "<p>Not quite! The validates function would allow us to validate multiple columns\nbut it is a python level validation.&nbsp;</p>",
+          "comments_html": "<p>Not quite! The validates function would allow us to validate multiple columns\nbut it is a python level validation.</p>",
           "weight": 0.0
         },
         {
@@ -183,42 +183,42 @@
       "id": 366116,
       "quiz_id": 53510,
       "quiz_group_id": null,
-      "assessment_question_id": null,
-      "position": 3,
+      "assessment_question_id": 635913,
+      "position": null,
       "question_name": "Validations",
       "question_type": "multiple_choice_question",
-      "question_text": "<p>What does the key represent in the validate_email method?&nbsp;</p>\n<pre class=\"highlight python\"><code><span class=\"o\">@</span><span class=\"n\">validates</span><span class=\"p\">(</span><span class=\"s\">'email'</span><span class=\"p\">,</span> <span class=\"s\">'backup_email'</span><span class=\"p\">)</span>\n<span class=\"k\">def</span> <span class=\"nf\">validate_email</span><span class=\"p\">(</span><span class=\"bp\">self</span><span class=\"p\">,</span> <span class=\"n\">key</span><span class=\"p\">,</span> <span class=\"n\">address</span><span class=\"p\">):</span>\n    <span class=\"k\">if</span> <span class=\"s\">'@'</span> <span class=\"ow\">not</span> <span class=\"ow\">in</span> <span class=\"n\">address</span><span class=\"p\">:</span>\n        <span class=\"k\">raise</span> <span class=\"nb\">ValueError</span><span class=\"p\">(</span><span class=\"s\">\"failed simple email validation\"</span><span class=\"p\">)</span>\n    <span class=\"k\">return</span> <span class=\"n\">address</span></code></pre>\n<p>&nbsp;</p>",
+      "question_text": "<p>What does the key represent in the validate_email method?</p>\n<div class=\"highlight\"><pre class=\"highlight python\"><code><span class=\"o\">@</span><span class=\"n\">validates</span><span class=\"p\">(</span><span class=\"s\">'email'</span><span class=\"p\">,</span> <span class=\"s\">'backup_email'</span><span class=\"p\">)</span>\n<span class=\"k\">def</span> <span class=\"nf\">validate_email</span><span class=\"p\">(</span><span class=\"bp\">self</span><span class=\"p\">,</span> <span class=\"n\">key</span><span class=\"p\">,</span> <span class=\"n\">address</span><span class=\"p\">):</span>\n    <span class=\"k\">if</span> <span class=\"s\">'@'</span> <span class=\"ow\">not</span> <span class=\"ow\">in</span> <span class=\"n\">address</span><span class=\"p\">:</span>\n        <span class=\"k\">raise</span> <span class=\"nb\">ValueError</span><span class=\"p\">(</span><span class=\"s\">\"failed simple email validation\"</span><span class=\"p\">)</span>\n    <span class=\"k\">return</span> <span class=\"n\">address</span>\n</code></pre></div>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "Source/s:  Flask-SQLAlchemy Validations",
-      "correct_comments_html": null,
-      "incorrect_comments_html": null,
-      "neutral_comments_html": "<p><strong>Source/s:</strong></p>\n<ul>\n<li><a title=\"Flask-SQLAlchemy Validations\" href=\"/courses/7560/pages/flask-sqlalchemy-validations\">Flask-SQLAlchemy Validations</a></li>\n</ul>\n<p>&nbsp;</p>",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7560/pages/flask-sqlalchemy-validations\">Flask-SQLAlchemy Validations</a></li></ul><p></p>",
       "answers": [
         {
-          "weight": 100,
-          "migration_id": "RESPONSE_3182",
-          "id": 3182,
-          "text": "It represents which column the validate_email method is running on in case we are validating multiple columns with one function.",
-          "html": "It represents which column the validate_email method is running on in case we are validating multiple columns with one function.&nbsp;",
-          "comments": "Bingo! The key is how we determine which column is being validated so we can know what conditions we need to apply to the column.",
-          "comments_html": "Bingo! The key is how we determine which column is being validated so we can know what conditions we need to apply to the column.&nbsp;"
+          "id": 6675,
+          "text": "",
+          "html": "<p>It represents which column the validate_email method is running on in case we\nare validating multiple columns with one function.</p>",
+          "comments": "",
+          "comments_html": "<p>Bingo! The key is how we determine which column is being validated so we can\nknow what conditions we need to apply to the column.</p>",
+          "weight": 100.0
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_3936",
-          "id": 3936,
-          "text": "The key represents the primary key value for the row.",
-          "comments": "Not quite! The names can be confusing but the key in this context has a different meaning.",
-          "comments_html": "Not quite! The names can be confusing but the key in this context has a different meaning.&nbsp;"
+          "id": 5341,
+          "text": "",
+          "html": "<p>The key represents the primary key value for the row.</p>",
+          "comments": "",
+          "comments_html": "<p>Not quite! The names can be confusing but the key in this context has a\ndifferent meaning.</p>",
+          "weight": 0.0
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_3658",
-          "id": 3658,
-          "text": "I don't know",
-          "html": "I don't know"
+          "id": 8484,
+          "text": "",
+          "html": "<p>I don't know</p>",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0
         }
       ],
       "variables": null,
@@ -236,7 +236,7 @@
       "position": null,
       "question_name": "Validations",
       "question_type": "multiple_choice_question",
-      "question_text": "<p>Which of these validations is most appropriate for making sure that a model's\n<strong>category</strong> must be either \"Fruit\" or \"Vegetable\"?</p>",
+      "question_text": "<p>Which of these validations is most appropriate for making sure that a\nmodel's <strong>category</strong> must be either \"Fruit\" or \"Vegetable\"?</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
@@ -246,27 +246,27 @@
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7560/pages/flask-sqlalchemy-validations\">Flask-SQLAlchemy Validations</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 5750,
+          "id": 5665,
           "text": "",
-          "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"vi\">@validates</span><span class=\"p\">(</span><span class=\"s1\">'category'</span><span class=\"p\">)</span> <span class=\"k\">def</span> <span class=\"nf\">validate_category</span><span class=\"p\">(</span><span class=\"nb\">self</span><span class=\"p\">,</span> <span class=\"n\">key</span><span class=\"p\">,</span> <span class=\"n\">category</span><span class=\"p\">):</span> <span class=\"err\">&nbsp;</span> <span class=\"k\">if</span> <span class=\"n\">category</span> <span class=\"o\">!=</span> <span class=\"s1\">'Fruit'</span> <span class=\"n\">and</span> <span class=\"n\">category</span> <span class=\"o\">!=</span> <span class=\"s1\">'Vegetable'</span><span class=\"p\">:</span> <span class=\"err\">&nbsp;</span> <span class=\"err\">&nbsp;</span> <span class=\"err\">&nbsp;</span> <span class=\"k\">raise</span> <span class=\"no\">ValueError</span><span class=\"p\">(</span><span class=\"s2\">\"Category must be Fruit or Vegetable.\"</span><span class=\"p\">)</span> <span class=\"err\">&nbsp;</span> <span class=\"k\">return</span> <span class=\"n\">category</span>\n</code></pre></div>",
+          "html": "<div class=\"highlight\"><pre class=\"highlight python\"><code><span class=\"o\">@</span><span class=\"n\">validates</span><span class=\"p\">(</span><span class=\"s\">'category'</span><span class=\"p\">)</span> \n\n<span class=\"k\">def</span> <span class=\"nf\">validate_category</span><span class=\"p\">(</span><span class=\"bp\">self</span><span class=\"p\">,</span> <span class=\"n\">key</span><span class=\"p\">,</span> <span class=\"n\">category</span><span class=\"p\">):</span>\n  <span class=\"k\">if</span> <span class=\"n\">category</span> <span class=\"o\">!=</span> <span class=\"s\">'Fruit'</span> <span class=\"ow\">and</span> <span class=\"n\">category</span> <span class=\"o\">!=</span> <span class=\"s\">'Vegetable'</span><span class=\"p\">:</span>\n    <span class=\"k\">raise</span> <span class=\"nb\">ValueError</span><span class=\"p\">(</span><span class=\"s\">\"Category must be Fruit or Vegetable.\"</span><span class=\"p\">)</span>\n  <span class=\"k\">return</span> <span class=\"n\">category</span>\n</code></pre></div>",
           "comments": "",
           "comments_html": "<p>Correct! In the validate_category method we can check if the category is not\nthe two allowed values.</p>",
           "weight": 100.0
         },
         {
-          "id": 4294,
+          "id": 6655,
           "text": "",
-          "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"k\">def</span> <span class=\"nf\">validate_category</span><span class=\"p\">(</span><span class=\"nb\">self</span><span class=\"p\">,</span> <span class=\"n\">key</span><span class=\"p\">,</span> <span class=\"n\">category</span><span class=\"p\">):</span> <span class=\"err\">&nbsp;</span> <span class=\"k\">if</span> <span class=\"n\">category</span> <span class=\"o\">!=</span> <span class=\"s1\">'Fruit'</span> <span class=\"n\">and</span> <span class=\"n\">category</span> <span class=\"o\">!=</span> <span class=\"s1\">'Vegetable'</span><span class=\"p\">:</span> <span class=\"err\">&nbsp;</span> <span class=\"err\">&nbsp;</span> <span class=\"err\">&nbsp;</span> <span class=\"k\">raise</span> <span class=\"no\">ValueError</span><span class=\"p\">(</span><span class=\"s2\">\"Category must be Fruit or Vegetable.\"</span><span class=\"p\">)</span> <span class=\"err\">&nbsp;</span> <span class=\"k\">return</span> <span class=\"n\">category</span>\n</code></pre></div>",
+          "html": "<div class=\"highlight\"><pre class=\"highlight python\"><code><span class=\"k\">def</span> <span class=\"nf\">validate_category</span><span class=\"p\">(</span><span class=\"bp\">self</span><span class=\"p\">,</span> <span class=\"n\">key</span><span class=\"p\">,</span> <span class=\"n\">category</span><span class=\"p\">):</span>\n  <span class=\"k\">if</span> <span class=\"n\">category</span> <span class=\"o\">!=</span> <span class=\"s\">'Fruit'</span> <span class=\"ow\">and</span> <span class=\"n\">category</span> <span class=\"o\">!=</span> <span class=\"s\">'Vegetable'</span><span class=\"p\">:</span>\n    <span class=\"k\">raise</span> <span class=\"nb\">ValueError</span><span class=\"p\">(</span><span class=\"s\">\"Category must be Fruit or Vegetable.\"</span><span class=\"p\">)</span>\n  <span class=\"k\">return</span> <span class=\"n\">category</span>\n</code></pre></div>",
           "comments": "",
           "comments_html": "<p>Almost! We are missing something important before we write the\nvalidate_category method.</p>",
           "weight": 0.0
         },
         {
-          "id": 2471,
+          "id": 1107,
           "text": "",
-          "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"vi\">@validates</span><span class=\"p\">(</span><span class=\"s1\">'category'</span><span class=\"p\">)</span> <span class=\"k\">def</span> <span class=\"nf\">validate_category</span><span class=\"p\">(</span><span class=\"nb\">self</span><span class=\"p\">,</span> <span class=\"n\">key</span><span class=\"p\">,</span> <span class=\"n\">category</span><span class=\"p\">):</span> <span class=\"err\">&nbsp;</span> <span class=\"k\">if</span> <span class=\"n\">category</span> <span class=\"o\">==</span> <span class=\"s1\">'Fruit'</span> <span class=\"n\">and</span> <span class=\"n\">category</span> <span class=\"o\">==</span> <span class=\"s1\">'Vegetable'</span><span class=\"p\">:</span> <span class=\"err\">&nbsp;</span> <span class=\"err\">&nbsp;</span> <span class=\"err\">&nbsp;</span> <span class=\"k\">raise</span> <span class=\"no\">ValueError</span><span class=\"p\">(</span><span class=\"s2\">\"Category must be Fruit or Vegetable.\"</span><span class=\"p\">)</span> <span class=\"err\">&nbsp;</span> <span class=\"k\">return</span> <span class=\"n\">category</span>\n</code></pre></div>",
+          "html": "<div class=\"highlight\"><pre class=\"highlight python\"><code><span class=\"o\">@</span><span class=\"n\">validates</span><span class=\"p\">(</span><span class=\"s\">'category'</span><span class=\"p\">)</span> \n\n<span class=\"k\">def</span> <span class=\"nf\">validate_category</span><span class=\"p\">(</span><span class=\"bp\">self</span><span class=\"p\">,</span> <span class=\"n\">key</span><span class=\"p\">,</span> <span class=\"n\">category</span><span class=\"p\">):</span>\n  <span class=\"k\">if</span> <span class=\"n\">category</span> <span class=\"o\">==</span> <span class=\"s\">'Fruit'</span> <span class=\"ow\">and</span> <span class=\"n\">category</span> <span class=\"o\">==</span> <span class=\"s\">'Vegetable'</span><span class=\"p\">:</span>\n    <span class=\"k\">raise</span> <span class=\"nb\">ValueError</span><span class=\"p\">(</span><span class=\"s\">\"Category must be Fruit or Vegetable.\"</span><span class=\"p\">)</span>\n<span class=\"err\">&nbsp;</span> <span class=\"k\">return</span> <span class=\"n\">category</span>\n</code></pre></div>",
           "comments": "",
-          "comments_html": "<p>Something is wrong with the validation logic here.&nbsp;</p>",
+          "comments_html": "<p>Something is wrong with the validation logic here.</p>",
           "weight": 0.0
         },
         {
@@ -293,7 +293,7 @@
       "position": null,
       "question_name": "Validations",
       "question_type": "multiple_choice_question",
-      "question_text": "<p>Which of these validations is most appropriate for making sure that a model's\n<strong>title</strong> is at least 20 letters long?</p>",
+      "question_text": "<p>Which of these validations is most appropriate for making sure that a\nmodel's <strong>title</strong> is at least 20 letters long?</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
@@ -303,19 +303,19 @@
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7560/pages/flask-sqlalchemy-validations\">Flask-SQLAlchemy Validations</a></li></ul><p></p>",
       "answers": [
         {
-          "id": 1538,
+          "id": 7473,
           "text": "",
-          "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"vi\">@validates</span><span class=\"p\">(</span><span class=\"s1\">'title'</span><span class=\"p\">)</span><span class=\"k\">def</span> <span class=\"nf\">validate_title</span><span class=\"p\">(</span><span class=\"nb\">self</span><span class=\"p\">,</span> <span class=\"n\">key</span><span class=\"p\">,</span> <span class=\"n\">title</span><span class=\"p\">):</span> <span class=\"k\">if</span> <span class=\"n\">len</span><span class=\"p\">(</span><span class=\"n\">title</span><span class=\"p\">)</span> <span class=\"o\">&lt;=</span> <span class=\"mi\">20</span><span class=\"p\">:</span> <span class=\"err\">&nbsp;</span> <span class=\"k\">raise</span> <span class=\"no\">ValueError</span><span class=\"p\">(</span><span class=\"s2\">\"title must be 20 letters.\"</span><span class=\"p\">)</span> <span class=\"k\">return</span> <span class=\"n\">title</span>\n</code></pre></div>",
+          "html": "<div class=\"highlight\"><pre class=\"highlight python\"><code><span class=\"o\">@</span><span class=\"n\">validates</span><span class=\"p\">(</span><span class=\"s\">'title'</span><span class=\"p\">)</span>\n\n<span class=\"k\">def</span> <span class=\"nf\">validate_title</span><span class=\"p\">(</span><span class=\"bp\">self</span><span class=\"p\">,</span> <span class=\"n\">key</span><span class=\"p\">,</span> <span class=\"n\">title</span><span class=\"p\">):</span>\n  <span class=\"k\">if</span> <span class=\"nb\">len</span><span class=\"p\">(</span><span class=\"n\">title</span><span class=\"p\">)</span> <span class=\"o\">&lt;=</span> <span class=\"mi\">20</span><span class=\"p\">:</span>\n    <span class=\"k\">raise</span> <span class=\"nb\">ValueError</span><span class=\"p\">(</span><span class=\"s\">\"title must be 20 letters.\"</span><span class=\"p\">)</span>\n  <span class=\"k\">return</span> <span class=\"n\">title</span>\n</code></pre></div>",
           "comments": "",
           "comments_html": "<p>Right! <code>len()</code> is helpful for checking the length of an attribute.</p>",
           "weight": 100.0
         },
         {
-          "id": 5754,
+          "id": 3181,
           "text": "",
-          "html": "<div class=\"highlight\"><pre class=\"highlight ruby\"><code><span class=\"vi\">@validates</span><span class=\"p\">(</span><span class=\"s1\">'title'</span><span class=\"p\">)</span><span class=\"k\">def</span> <span class=\"nf\">validate_title</span><span class=\"p\">(</span><span class=\"nb\">self</span><span class=\"p\">,</span> <span class=\"n\">key</span><span class=\"p\">,</span> <span class=\"n\">title</span><span class=\"p\">):</span> <span class=\"k\">if</span> <span class=\"n\">len</span><span class=\"p\">(</span><span class=\"n\">title</span><span class=\"p\">)</span> <span class=\"o\">!=</span> <span class=\"mi\">20</span><span class=\"p\">:</span> <span class=\"err\">&nbsp;</span> <span class=\"err\">&nbsp;</span> <span class=\"k\">raise</span> <span class=\"no\">ValueError</span><span class=\"p\">(</span><span class=\"s2\">\"title must be 20 letters.\"</span><span class=\"p\">)</span> <span class=\"k\">return</span> <span class=\"n\">title</span>\n</code></pre></div>",
+          "html": "<div class=\"highlight\"><pre class=\"highlight python\"><code><span class=\"o\">@</span><span class=\"n\">validates</span><span class=\"p\">(</span><span class=\"s\">'title'</span><span class=\"p\">)</span>\n\n<span class=\"k\">def</span> <span class=\"nf\">validate_title</span><span class=\"p\">(</span><span class=\"bp\">self</span><span class=\"p\">,</span> <span class=\"n\">key</span><span class=\"p\">,</span> <span class=\"n\">title</span><span class=\"p\">):</span>\n  <span class=\"k\">if</span> <span class=\"nb\">len</span><span class=\"p\">(</span><span class=\"n\">title</span><span class=\"p\">)</span> <span class=\"o\">!=</span> <span class=\"mi\">20</span><span class=\"p\">:</span>\n    <span class=\"k\">raise</span> <span class=\"nb\">ValueError</span><span class=\"p\">(</span><span class=\"s\">\"title must be 20 letters.\"</span><span class=\"p\">)</span>\n  <span class=\"k\">return</span> <span class=\"n\">title</span>\n</code></pre></div>",
           "comments": "",
-          "comments_html": "<p>Not quite! Let's look at the validation logic how would we check if a string is\nat least 20 characters long?&nbsp;</p>",
+          "comments_html": "<p>Not quite! Let's look at the validation logic how would we check if a string is\nat least 20 characters long?</p>",
           "weight": 0.0
         },
         {
@@ -338,57 +338,58 @@
       "id": 366119,
       "quiz_id": 53510,
       "quiz_group_id": null,
-      "assessment_question_id": null,
-      "position": 6,
+      "assessment_question_id": 635914,
+      "position": null,
       "question_name": "Validations",
       "question_type": "multiple_choice_question",
-      "question_text": "Of the following HTTP status codes, which is the most appropriate to return if a model's data is not valid?",
+      "question_text": "<p>Of the following HTTP status codes, which is the most appropriate to return if a\nmodel's data is not valid?</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "Source/s:  Flask-SQLAlchemy Validations",
-      "correct_comments_html": null,
-      "incorrect_comments_html": null,
-      "neutral_comments_html": "<p><strong>Source/s:</strong></p>\n<ul>\n<li><a title=\"Flask-SQLAlchemy Validations\" href=\"/courses/7560/pages/flask-sqlalchemy-validations\">Flask-SQLAlchemy Validations</a></li>\n</ul>\n<p>&nbsp;</p>",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7560/pages/flask-sqlalchemy-validations\">Flask-SQLAlchemy Validations</a></li></ul><p></p>",
       "answers": [
         {
-          "weight": 100,
-          "migration_id": "RESPONSE_5982",
-          "id": 5982,
-          "text": "422 (Unprocessable Entity)",
-          "comments": "Right! To quote the spec Links to an external site.: The 422 (Unprocessable Entity) status code means the server understands the content type of the request entity, and the syntax of the request entity is correct, but was unable to process the contained instructions. There are some differences of opinions on this Links to an external site.",
-          "comments_html": "Right! To quote the <a class=\"external\" href=\"https://datatracker.ietf.org/doc/html/rfc4918#section-11.2\" target=\"_blank\"><span>spec</span><span class=\"external_link_icon\" role=\"presentation\"> <span class=\"screenreader-only\">Links to an external site.</span></span></a>: The 422 (Unprocessable Entity) status code means the server understands the content type of the request entity, and the syntax of the request entity is correct, but was unable to process the contained instructions. There are some <a class=\"external\" href=\"https://stackoverflow.com/a/20215807\" target=\"_blank\"><span>differences of opinions on this</span><span class=\"external_link_icon\" role=\"presentation\"> <span class=\"screenreader-only\">Links to an external site.</span></span></a>"
+          "id": 1548,
+          "text": "",
+          "html": "<p>422 (Unprocessable Entity)</p>",
+          "comments": "",
+          "comments_html": "<p>Right! To quote the\n<a href=\"https://datatracker.ietf.org/doc/html/rfc4918#section-11.2\">spec</a>: The 422\n(Unprocessable Entity) status code means the server understands the content\ntype of the request entity, and the syntax of the request entity is correct,\nbut was unable to process the contained instructions. There are some\n<a href=\"https://stackoverflow.com/a/20215807\">differences of opinion on this</a>.</p>",
+          "weight": 100.0
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_5044",
-          "id": 5044,
-          "text": "418 (I'm a teapot)",
-          "html": "418 (I'm a teapot)",
-          "comments": "This is an actual status code that was created for an April Fool's joke Links to an external site.!",
-          "comments_html": "This is an actual status code that was created for an <a class=\"external\" href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/418\" target=\"_blank\"><span>April Fool's joke</span><span class=\"external_link_icon\" role=\"presentation\"> <span class=\"screenreader-only\">Links to an external site.</span></span></a>!"
+          "id": 5218,
+          "text": "",
+          "html": "<p>418 (I'm a teapot)</p>",
+          "comments": "",
+          "comments_html": "<p>This is an actual status code that was created as an <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/418\">April Fool's\njoke</a>!</p>",
+          "weight": 0.0
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_5831",
-          "id": 5831,
-          "text": "500 (Internal Server Error)",
-          "comments": "500 Internal Server Error indicates that \"something went wrong on the server\", typically because of a runtime error on the server itself. You shouldn't return this status code from any controller actions directly."
+          "id": 5018,
+          "text": "",
+          "html": "<p>500 (Internal Server Error)</p>",
+          "comments": "",
+          "comments_html": "<p>500 Internal Server Error indicates that \"something went wrong on the server\",\ntypically because of a runtime error on the server itself. You shouldn't return\nthis status code from any controller actions directly.</p>",
+          "weight": 0.0
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_6807",
-          "id": 6807,
-          "text": "404 (Not Found)",
-          "comments": "This error indicates that the record itself wasn't found, not that the model's data was not valid.",
-          "comments_html": "This error indicates that the record itself wasn't found, not that the model's\ndata was not valid."
+          "id": 7978,
+          "text": "",
+          "html": "<p>404 (Not Found)</p>",
+          "comments": "",
+          "comments_html": "<p>This error indicates that the record itself wasn't found, not that the model's\ndata was not valid.</p>",
+          "weight": 0.0
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_2188",
-          "id": 2188,
-          "text": "I don't know",
-          "html": "I don't know"
+          "id": 9636,
+          "text": "",
+          "html": "<p>I don't know</p>",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0
         }
       ],
       "variables": null,
